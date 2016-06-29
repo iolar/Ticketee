@@ -7,6 +7,12 @@ gem 'rails', '4.2.6'
 gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+# Use Bootstrap for stylesheet
+gem 'bootstrap-sass', '~> 3.3'
+# Use Font Awesome icons for buttons
+gem "font-awesome-rails", "~> 4.3"
+# Use Simple Form for rendering forms
+gem 'simple_form', '~> 3.1.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
