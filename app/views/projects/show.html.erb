@@ -13,6 +13,7 @@
     %></li>
   </ul>
 </header>
+
 <p><%= @project.description %></p>
 
 <header>
@@ -23,3 +24,12 @@
       class: "new" %></li>
   </ul>
 </header>
+
+<ul id="tickets">
+  <%	 @project.tickets.each do |ticket| %>
+  <li>
+    #<%= ticket.id %>
+    <%=	 link_to ticket.name, [@project, ticket] %>
+  </li>
+  <% end %>
+</ul>
