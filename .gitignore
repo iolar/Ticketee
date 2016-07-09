@@ -26,3 +26,5 @@ doc/
 .DS_Store
 .idea
 .secret
+# Rails 4 in Action
+public/uploads
