@@ -1,16 +1,6 @@
 require 'spec_helper'
 
-describe ProjectPolicy do
-
-  let(:user) { User.new }
-
-  subject { ProjectPolicy }
-
-  permissions ".scope" do
-  end
-
-  permissions :create? do
-  end
+Rails.describe ProjectPolicy do
 
   context "policy_scope" do
     subject { Pundit.policy_scope(user, Project) }

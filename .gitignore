@@ -27,4 +27,4 @@ doc/
 .idea
 .secret
 # Rails 4 in Action
-public/uploads
+uploads
