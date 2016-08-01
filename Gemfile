@@ -19,6 +19,8 @@ gem 'devise', '~> 3.4.1'
 gem 'pundit', '~> 0.3.0'
 # Use CarrierWave for uploading files
 gem 'carrierwave', '~> 0.10.0'
+# Use Searcher fo search
+gem 'searcher', github: 'radar/searcher'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
