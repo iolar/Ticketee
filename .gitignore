@@ -28,3 +28,4 @@ doc/
 .secret
 # Rails 4 in Action
 uploads
+rootkey.csv
