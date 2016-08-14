@@ -49,6 +49,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Fog for files upload
 gem 'fog', '~>1.29.0'
 
+# Use 12factor for logging and static
+gem 'rails_12factor', group: :production
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
