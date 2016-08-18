@@ -2,5 +2,12 @@ language: ruby
 rvm: 2.3.0
 script: bundle exec rspec
 before_install:
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+deploy:
+  provider: heroku
+  api_key:
+    secure: uzKxkEec9h4RgqqEFLQDU6YacHi9nvifNiDMj86RdrlEt3cVrmrM+hoAdn9Me0hmfyZoUkFMCDHjG6e3+buy5lJ6lLRolvy3jhcUADS2fL4OS1YiwmANFOYpptv2cqM8JhrCq5qBWxCUhE6GszmVJ0HJ/qH1urGZ8+roKOTTMS+VJ+PmXoJX893+lHxj6plyM9jXhGdXiLcfuvvk9X5bni8zRai3JwCQSev1WbLowylg/nGxLgYA/ZXDc0/tAhMyVCMUfIbp/bxOuLVPbRBO79FUQ6iQterHePqDiDXcVR9RTv6NKxMbzd0QEcsnyiqCahuuv03m3q4XGibLZf1brvig5VjHwAgOb/YQ4FOxnmfDXjRPlh+J+EkR15RSqqEhYI9CXzP588dplTazSLM0/sbzTf1078Bzx6Qj9pU7KUF0IlEzogX/lO/mnnqAbDWPAGi5DL/bmP9CIMCAB0erkUsAbIz+AJc53ONr/CKH/kOuRB+7+2oLpZy8fsX/vIqPE4VRrP+oUQ79tm2F86zgpEr0sle4OB+twB+M/SR9aSzv/CgvrAnr4ztkHt557oeCJ5Qa/Ydm2cxhfJoKE1MlMtnPGiMsU8BgMfLFU61yQIDBsXrsGfRXUQzi7sYNH5vvRciYr3doLi1wHUAiuBw46D4ZYeNijxaDxL5REuYLyVQ=
+  app: ticketee-iolar
+  on:
+    repo: iolar/Ticketee
