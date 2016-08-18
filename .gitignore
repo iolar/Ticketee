@@ -18,7 +18,6 @@
 
 # Игнорирование прочих ненужных файлов.
 # http://railstutorial.ru/chapters/4_0/beginning#sec-1_3_3
-database.yml
 doc/
 *.swp
 *~
