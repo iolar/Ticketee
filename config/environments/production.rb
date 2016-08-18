@@ -76,4 +76,23 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Heroku Mailgun configuration
+
+  ActionMailer::Base.delivery_method = :smtp
+
+  host = 'ticketee-iolar.herokuapp.com'
+
+  ActionMailer::Base.smpt_settings = {
+      port:           ENV['MAILGUN_SMPT_PORT'],
+      address:        ENV['MAILGUN_SMPT_SERVER'],
+      user_name:      ENV['MAILGUN_SMTP_LOGIN:'],
+      password:       ENV['MAILGUN_SMTP_PASSWORD'],
+      domain:         host,
+      authentication: :plain
+  }
+
+  config.action_mailer.default_url_options = {
+      host: host
+  }
 end
