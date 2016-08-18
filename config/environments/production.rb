@@ -81,7 +81,7 @@ Rails.application.configure do
 
   ActionMailer::Base.delivery_method = :smtp
 
-  host = 'ticketee-iolar.herokuapp.com'
+  host = 'https://ticketee-iolar.herokuapp.com'
 
   ActionMailer::Base.smtp_settings = {
       port:           ENV['MAILGUN_SMPT_PORT'],
