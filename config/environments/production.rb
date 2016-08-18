@@ -83,7 +83,7 @@ Rails.application.configure do
 
   host = 'ticketee-iolar.herokuapp.com'
 
-  ActionMailer::Base.smpt_settings = {
+  ActionMailer::Base.smtp_settings = {
       port:           ENV['MAILGUN_SMPT_PORT'],
       address:        ENV['MAILGUN_SMPT_SERVER'],
       user_name:      ENV['MAILGUN_SMTP_LOGIN:'],
