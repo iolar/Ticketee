@@ -21,7 +21,7 @@ gem 'devise', '~> 3.4.1'
 gem 'pundit', '~> 0.3.0'
 # Use CarrierWave for uploading files
 gem 'carrierwave', '~> 0.10.0'
-# Use Searcher fo search
+# Use Searcher for search
 gem 'searcher', github: 'radar/searcher'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -45,6 +45,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+# Use AMS for serializing models
+gem 'active_model_serializers', '~> 0.9.3'
 
 # Use Fog for files upload
 gem 'fog', '~> 1.36.0'
