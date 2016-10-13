@@ -103,7 +103,7 @@ GEM
     factory_girl_rails (4.7.0)
       factory_girl (~> 4.7.0)
       railties (>= 3.0.0)
-    ffi (1.9.13)
+    ffi (1.9.14)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
     fog (1.36.0)
@@ -314,7 +314,7 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    selenium-webdriver (2.53.4)
+    selenium-webdriver (3.0.0.beta4.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.0)
       websocket (~> 1.0)
@@ -380,7 +380,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   searcher!
-  selenium-webdriver (~> 2.45)
+  selenium-webdriver (~> 3.0.0.beta3.1)
   simple_form (~> 3.1.0)
   spring
   sqlite3
