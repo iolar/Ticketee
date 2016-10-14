@@ -80,7 +80,7 @@ end
 group :test do
   gem 'capybara', '~> 2.4'
   gem 'factory_girl_rails', '~> 4.5'
-  gem 'selenium-webdriver', '~> 3.0.0.beta3.1'
+  gem 'selenium-webdriver', '~> 3.0.0'
   gem 'database_cleaner', '~>  1.4'
   gem 'email_spec', '~> 1.6.0'
 end
