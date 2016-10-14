@@ -4,8 +4,16 @@ script: bundle exec rspec
 before_install:
 - export DISPLAY=:99.0
 - sh -e /etc/init.d/xvfb start
-% git ls-remote --tags https://github.com/mozilla/geckodriver.git | sort -t '/' -k 3 -V | tail -1
-1c2ec08cf02d6fa25796781d281487afcb0f8f99        refs/tags/v0.11.0
+
+- git clone https://github.com/mozilla/geckodriver.git
+- ln -s geckodriver/src src
+- ln -s geckodriver/Cargo.toml Cargo.toml
+- ln -s geckodriver/Cargo.lock Cargo.lock
+- export PATH="$PATH:$HOME/.cargo/bin"
+- curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain=stable
+- rustc -V
+- cargo -V
+- wget -O - https://raw.githubusercontent.com/mozilla/geckodriver/master/ci.sh | bash
 deploy:
   provider: heroku
   api_key:
